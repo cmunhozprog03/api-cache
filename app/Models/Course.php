@@ -9,5 +9,5 @@ class Course extends Model
 {
     use HasFactory;
 
-    protected $fillabel = ['name', 'description'];
+    protected $fillable = ['name', 'description'];
 }

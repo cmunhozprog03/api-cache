@@ -18,4 +18,19 @@ class CourseService
     {
         return $this->repository->getAllCourses();
     }
+
+    public function createNewCourse(array $data)
+    {
+        return $this->repository->createNewCourse($data);
+    }
+
+    public function getCourse(string $identify)
+    {
+        return $this->repository->getCourseByUuid($identify);
+    }
+
+    public function deleteCourse(string $identify)
+    {
+        return $this->repository->deleteCourseByUuid($identify);
+    }
 }
